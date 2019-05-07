@@ -6,10 +6,10 @@ const dimsumSchema = new mongoose.Schema({
   name: String,
   chars: String,
   pseudo_canto_pronunciation: String,
-  category: Array,
+  category: String,
   vegetarian: Boolean,
   image_url: String,
-  other_names: Array,
+  other_names: String,
   description: String,
 });
 
