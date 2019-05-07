@@ -62,8 +62,8 @@ class App extends React.Component {
             let dessert = this.filterDimSums(allDimSums, 'dessert')
             return (
                 <div>
-                    <div className='reviewToolbar'>
-                        <select onChange={this.filterDimSumType}>
+                    <div className='dimsum-toolbar'>
+                        <select className="filter-dropdown" onChange={this.filterDimSumType}>
                             <option value='All Dim Sums'>All Dim Sums</option>
                             <option value='classic'>Classic</option>
                             <option value='vegetarian'>Vegetarian</option>

@@ -14,7 +14,6 @@ body {
     margin-right: auto;
     margin-left: 10px;
     font-family: 'Lobster', sans-serif;
-    color: rgb(246,239,228);
     color: white;
 }
 
@@ -44,7 +43,6 @@ body {
     color: white;
 }
 
-
 .main {
     margin-top: 20px;
     margin-left: 10%;
@@ -52,6 +50,16 @@ body {
 }
 
 /**************** Dim Sum Dishes ***************/
+.dimsum-toolbar {
+    text-align: right;
+}
+
+.filter-dropdown {
+    font-size: 1.2em;
+    font-weight: 400;
+    width: 300px;
+}
+
 .dimsum-category-title {
     font-weight: 400;
     font-size: 2em;
@@ -60,7 +68,7 @@ body {
 .dimsum-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px 0px; 
+    margin: 10px 30px; 
 }
 
 .dimsum-image {
@@ -69,12 +77,12 @@ body {
 }
 
 .dimsum-text-container {
-    width: 800px;
+    width: 750px;
 }
 
 .dimsum-title {
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .dimsum-chinese-chars {
@@ -83,4 +91,25 @@ body {
 
 .dimsum-other-names {
     color: rgb(110, 110, 110)
+}
+
+/**************** Restaurant ***************/
+.restaurant-category-title {
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.search-bar {
+    width: 200px;
+    border-radius: 5px;
+    border: gray solid 1px;
+    font-size: 1.2em;
+}
+
+.search-button {
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 2px 10px;
+    margin-left: 10px;
+    background-color: rgb(246,188,60);
 }
