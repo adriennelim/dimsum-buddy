@@ -1,5 +1,7 @@
 import React from 'react';
 
+import axios from 'axios';
+
 import Dimsums from './Dimsums.jsx';
 
 import Restaurants from './Restaurants.jsx';
@@ -9,7 +11,8 @@ class App extends React.Component {
         super(props)
         this.state = {
             view: 'dimsums',
-            category: null
+            dimsums: [],
+            filterCategory: null
         }
 
         this.changeView = this.changeView.bind(this);
@@ -22,10 +25,24 @@ class App extends React.Component {
         });
     }
 
+    getDimSums() {
+        axios.get('/dimsums')
+        .then(response => {
+            this.setState({
+                dimsums: response.data
+            })
+        })
+        .catch(err => console.log(err))
+    }
+
+    componentDidMount() {
+        this.getDimSums();
+    }
+
     renderView() {
         const {view} = this.state;
         if (view === 'dimsums') {
-          return <Dimsums />
+          return <Dimsums dimsums={this.state.dimsums} />
         } else if (view === 'restaurants') {
           return <Restaurants />
         } 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Restaurants = (props) => (
     <div>
-        Restaurant
+        Restaurant feature coming soon!
     </div>
 )
 
