@@ -113,3 +113,26 @@ body {
     margin-left: 10px;
     background-color: rgb(246,188,60);
 }
+
+.restaurant-map-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restaurant-container {
+    width: 600px;
+}
+
+.map-container {
+    width: 500px;
+    margin-left: 20px;
+}
+
+.mock-restaurants {
+    width: 100%;
+}
+
+.mock-map {
+    width: 100%;
+    margin-top: 105px;
+}
