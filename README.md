@@ -15,4 +15,4 @@ Once MongoDB is installed, enter the following code to create a db named 'dimsum
 mongoimport --host=127.0.0.1 -d dimsumbuddy -c dimsums --type csv --file <insert .csv filepath here> --headerline
 ```
 ## App Demo
-![alt text](https://i.imgur.com/51LQraO.gifv "Dim Sum Buddy App Demo")
+![alt text](https://i.imgur.com/51LQraO.gif "Dim Sum Buddy App Demo")
